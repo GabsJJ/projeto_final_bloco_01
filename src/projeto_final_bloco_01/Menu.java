@@ -3,22 +3,32 @@ package projeto_final_bloco_01;
 import java.io.IOException;
 import java.util.Scanner;
 
+import projeto_final_bloco_01.model.Livro;
+import projeto_final_bloco_01.model.Revista;
+
 public class Menu {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		int opcao, id, tipo;
 		float preco;
-		String nome;
+		String titulo;
+		
+		//testes das classes
+		Livro li = new Livro(1, 1, "2001: Uma Odisséia no Espaço", 50f, "Ficção Científica");
+		li.visualizar();
+		
+		Revista rev = new Revista(2, 2, "Revista piauí", 35f, 320);
+		rev.visualizar();
 		
 		while (true) {
 
 			System.out.println("*******************************************************");
 			System.out.println("   Biblioteca de Alexandria - Compre antes que suma!   ");
 			System.out.println("*******************************************************");
-			System.out.println("    1 - Cadastrar Item                                 ");
+			System.out.println("    1 - Buscar item por ID (Código de identificação)   ");
 			System.out.println("    2 - Listar todo o acervo                           ");
-			System.out.println("    3 - Buscar item por ID (Código de identificação)   ");
+			System.out.println("    3 - Cadastrar Item                                 ");
 			System.out.println("    4 - Atualizar Dados de um Item                     ");
 			System.out.println("    5 - Apagar um Item                                 ");
 			System.out.println("    0 - Sair                                           ");
@@ -27,7 +37,7 @@ public class Menu {
 			opcao = leia.nextInt();
 
 			if (opcao == 0) {
-				System.out.println("\n");
+				System.out.println("Aplicação encerrada.\n");
 				leia.close();
 				System.exit(0);
 			}
