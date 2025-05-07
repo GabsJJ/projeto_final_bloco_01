@@ -21,6 +21,6 @@ public class Livro extends Item{
 	@Override
 	public void visualizar() {
 		super.visualizar();
-		System.out.println("Gênero do Item: " + this.genero);
+		System.out.println("Gênero do Item: " + this.genero + "\n");
 	}
 }

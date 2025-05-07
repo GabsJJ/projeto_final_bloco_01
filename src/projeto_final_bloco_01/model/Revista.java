@@ -21,6 +21,6 @@ public class Revista extends Item{
 	@Override
 	public void visualizar() {
 		super.visualizar();
-		System.out.println("Edição da Item: " + this.edicao);
+		System.out.println("Edição da Item: " + this.edicao + "\n");
 	}
 }

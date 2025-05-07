@@ -57,10 +57,10 @@ public abstract class Item {
 			case 2 -> tipo = "Revista";
 			default -> tipo = "Inválido";
 		}
-
-		System.out.println("*****************************************************");
-		System.out.println("                   Dados do item                     ");
-		System.out.println("*****************************************************");
+		
+		System.out.println(" _____________________________________________________");
+		System.out.println("|                   Dados do item                     |");
+		System.out.println(" -----------------------------------------------------");
 		System.out.println("Id do Item: " + this.id);
 		System.out.println("Título do Item: " + this.titulo);
 		System.out.println("Tipo do Item: " + tipo);
